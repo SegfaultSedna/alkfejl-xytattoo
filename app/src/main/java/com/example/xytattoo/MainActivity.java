@@ -102,12 +102,18 @@ public class MainActivity extends AppCompatActivity {
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
         mAuth.signInWithCredential(credential).addOnCompleteListener(this, task -> {
-            if(task.isSuccessful()) {
-                Log.i(LOG_TAG, "Google bejelentkezés sikeres");
+            if (task.isSuccessful()) {
+                boolean isNewUser = Objects.requireNonNull(task.getResult().getAdditionalUserInfo()).isNewUser();
+                if (isNewUser) {
+                    Log.i(LOG_TAG, "New user created with Google");
+                    // Perform actions for new users (e.g., save to database)
+                } else {
+                    Log.i(LOG_TAG, "Existing user signed in with Google");
+                }
                 goToHomePage();
             } else {
-                Log.i(LOG_TAG, "Google bejelentkezés sikertelen");
-                Toast.makeText(this, "Google bejelentkezés sikertelen: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
+                Log.i(LOG_TAG, "Google sign-in failed");
+                Toast.makeText(this, "Google sign-in failed: " + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -157,8 +163,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToHomePage() {
+        // Show a subtle Toast message for successful login
+        Toast.makeText(this, "Sikeres bejelentkezés!", Toast.LENGTH_SHORT).show();
+
+        // Navigate to HomeActivity
         Intent intent = new Intent(this, HomeActivity.class);
-        //intent.putExtra("SECRET_KEY", SECRET_KEY);
         startActivity(intent);
     }
 
