@@ -1,7 +1,7 @@
 ### Feladat: Tetováló szalon időpontfoglaló alkalmazás 
 </br>
 
-**Teszt felhasználó:**
+**Teszt felhasználó (bár regisztrálni is lehet):**
 </br>
 email: test@test.com
 </br>
