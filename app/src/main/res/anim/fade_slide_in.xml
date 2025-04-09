@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fade in from transparent to opaque -->
+    <alpha
+        android:duration="800"
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"/>
+    <!-- Slide in from below -->
+    <translate
+        android:duration="800"
+        android:fromYDelta="30dp"
+        android:toYDelta="0dp"/>
+</set>

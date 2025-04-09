@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">XYTattoo</string>
+    <string name="xytattoo">XYTattoo</string>
+    <string name="email">Email</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="noAccountText">Nincs még fiókod? Regisztrálj ide kattintva!</string>
+    <string name="lastname">Vezetéknév</string>
+    <string name="firstname">Keresztnév</string>
+    <string name="confirm_password">Jelszó megerősítése</string>
+    <string name="register">Regisztráció</string>
+    <string name="already_have_account">Van már meglévő fiókod? Jelentkezz be ide kattintva!</string>
+    <string name="phone_number">Telefonszám</string>
+    <string name="login_with_google">Bejelentkezés Google fiókkal</string>
+</resources>
