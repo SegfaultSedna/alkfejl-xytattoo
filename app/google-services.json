@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "933477637682",
+    "project_id": "alkfejl-xytattoo",
+    "storage_bucket": "alkfejl-xytattoo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933477637682:android:9ff40613f29ba77bd5e62b",
+        "android_client_info": {
+          "package_name": "com.example.xytattoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933477637682-d2m189if0rl67a8privohkumg5jqhais.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.xytattoo",
+            "certificate_hash": "f405fc0fe9f4fb17d88a600fb3e2504604654b0b"
+          }
+        },
+        {
+          "client_id": "933477637682-9p0p9rj1u0i2sg4iu39ae8ag16lvn8od.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS5x8sqGLwdwWJY5qDIrkgbzW-rEB-vQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933477637682-9p0p9rj1u0i2sg4iu39ae8ag16lvn8od.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
