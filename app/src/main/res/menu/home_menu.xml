@@ -6,4 +6,8 @@
         android:title="Kijelentkezés"
         android:icon="@drawable/ic_logout"
         app:showAsAction="always" />
+    <!--<item
+        android:id="@+id/action_my_appointments"
+        android:title="Időpontjaim"
+        app:showAsAction="never"/>-->
 </menu>
