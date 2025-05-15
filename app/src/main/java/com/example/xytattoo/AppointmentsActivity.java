@@ -23,6 +23,7 @@ import com.google.android.material.timepicker.TimeFormat;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 
 import java.time.LocalDate;
@@ -193,6 +194,7 @@ public class AppointmentsActivity extends AppCompatActivity {
 
         db.collection("appointments")
                 .whereEqualTo("userId", user.getUid())
+                .orderBy("date", Query.Direction.ASCENDING)
                 .get()
                 .addOnSuccessListener(queryDocumentSnapshots -> {
                     List<Appointment> appointments = queryDocumentSnapshots.toObjects(Appointment.class);
